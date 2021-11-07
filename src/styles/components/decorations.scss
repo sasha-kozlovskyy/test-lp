@@ -1,0 +1,39 @@
+.bones {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.dog {
+  position: absolute;
+  bottom: 22%;
+  left: 20%;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.dog2 {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.bones2 {
+  position: absolute;
+  bottom: 22%;
+  right: 25%;
+
+  @include onTablet {
+    display: none;
+  }
+}

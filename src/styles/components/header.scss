@@ -1,0 +1,114 @@
+.header {
+
+  &__container {
+    display: flex;
+    position: sticky;
+    background-color: $c-white;
+    top: 0;
+    z-index: 3;
+    justify-content: space-around;
+    align-items: center;
+    height: $header-h-desct;
+
+    @include onTablet {
+      height: $header-h-mob;
+      justify-content: space-between;
+      background-color: $c-white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include onTablet {
+      margin-left: 22px;
+    }
+  }
+
+  &__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - #{$header-h-desct});
+    background-image: url(../images/casino-software.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+
+    @include onTablet {
+      background-image: url(../images/casino-software_mob.png);
+      height: calc(100vh - #{$header-h-mob});
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: $c-white;
+    align-self: center;
+    padding: 138px 0;
+
+    @include onPhone {
+      font-size: 44px;
+    }
+
+    @include onSmallPhone {
+      text-align: left;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 345px;
+    height: 48px;
+    background: #0099fa;
+    border: 1px solid #0099fa;
+    padding: 0;
+    border-radius: 12px;
+    transition: 0.5s;
+    text-decoration: none;
+
+    @include onSmallPhone {
+      width: 300px;
+    }
+
+    &:hover {
+      background: #09a;
+      border: 1px solid #09a;
+    }
+  }
+  &__link {
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    color: $c-white;
+  }
+
+  &__counter {
+    display: flex;
+    width: 82px;
+
+    @include onPhone {
+      width: 66px;
+    }
+
+    @include onSmallPhone {
+      width: 160px;
+      justify-content: flex-end;
+    }
+  }
+}

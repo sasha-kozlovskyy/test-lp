@@ -1,0 +1,27 @@
+.menu {
+  background: #0099fa;
+  width: 54px;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  @include onTablet {
+    display: flex;
+  }
+
+  &__activ {
+    
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__close {
+    display: none;
+
+    &--hide {
+      display: block;
+    }
+  }
+}

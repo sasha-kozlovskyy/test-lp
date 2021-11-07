@@ -3,11 +3,129 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Test Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <img src="./images/LOGO.svg" alt="logo">
+        </a>
+        <div class="menu">
+          <img
+            class="menu__activ"
+            src="./images/menu.svg"
+            alt="menu"
+          >
+          <img
+            class="menu__close"
+            src="./images/cross.svg"
+            alt="cross"
+          >
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#news" class="nav__link">о нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">галерея</a>
+            </li>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">события</a>
+            </li>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">контакты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">о нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#news" class="nav__link">галерея</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__background">
+        <div class="header__title">
+          <div class="header__counter" data-target="100">0</div><span>+ sport events</span>
+        </div>
+        <a  href="#news" class="header__button">
+          <span class="header__link">Action button</span>
+        </a>
+        <object
+          type="image/svg+xml"
+          data="./images/bones.svg"
+          width="59"
+          height="59"
+          class="bones"
+        >
+        </object>
+        <object
+          type="image/svg+xml"
+          data="./images/dog.svg"
+          width="59"
+          height="59"
+          class="dog"
+        >
+        </object>
+        <object
+          type="image/svg+xml"
+          data="./images/bones.svg"
+          width="59"
+          height="59"
+          class="bones2"
+        >
+        </object>
+        <object
+          type="image/svg+xml"
+          data="./images/dog.svg"
+          width="59"
+          height="59"
+          class="dog2"
+        >
+        </object>
+      </div>
+    </header>
+    <main>
+      <section class="news">
+        <span class="news__title" id="news">Latest news</span>
+        <div class="slider swiper-container">
+          <div class="slider__wrapper swiper-wrapper">
+            <a href="#" class="slider__slide swiper-slide">
+              <img
+                class="slider__image"
+                src="./images/2800x665_Mask.png"
+                alt="dog"
+              >
+              <div class="slider__description">Et, a euismod maecenas leo ullamcorper enim quisque enim.</div>
+              <div class="slider__content">Et, a euismod maecenas leo ullamcorper enim quisque enimEt, a euismod maecenas leo ullamcorper </div>
+            </a>
+            <a href="#" class="slider__slide swiper-slide">
+              <img
+                class="slider__image"
+                src="./images/2800x665_Mask.png"
+                alt="dog"
+              >
+              <div class="slider__description">Et, a euismod maecenas!</div>
+              <div class="slider__content">Et, a euismod maecenas leo ullamcorper enim quisque enimEt, a euismod maecenas leo ullamcorper Et, a euismod maecenas leo ullamcorper enim quisque enimEt</div>
+            </a>
+            <a href="#" class="slider__slide swiper-slide">
+              <img
+                class="slider__image"
+                src="./images/2800x665_Mask.png"
+                alt="dog"
+              >
+              <div class="slider__description">Et, a euismod maecenas leo ullamcorper enim quisque enim.</div>
+              <div class="slider__content">Et, a euismod maecenas leo ullamcorper enim quisque enimEt, a euismod maecenas leo ullamcorper </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
