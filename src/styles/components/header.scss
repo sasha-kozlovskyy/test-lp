@@ -35,14 +35,18 @@
     flex-direction: column;
     width: 100%;
     height: calc(100vh - #{$header-h-desct});
-    background-image: url(../images/casino-software.png);
+    background-image: url(../images/casino-software1.png);
     background-repeat: no-repeat;
     background-position: center left;
     background-size: cover;
 
     @include onTablet {
-      background-image: url(../images/casino-software_mob.png);
+      background-position: center center;
       height: calc(100vh - #{$header-h-mob});
+    }
+
+    @include onPhone {
+      background-image: url(../images/casino-software_mob.png);
     }
   }
 
